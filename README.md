@@ -3,6 +3,6 @@ A MATLAB program to cross verify signatures offline. The program employs Radon t
 
 To execute the program:
 Open 'Feature_Extraction.m' and execute it. 
-After this, exectue the file 'Verification.m'. 
+After this, execute the file 'Verification.m'. 
 There are no images included in this repository. So before executing the program, capture some signatures, copy them to the folder where the program is present and rename them to 1.jpg, 2.jpg, 3.jpg, ...
-Also make appropriate changes in the variable 'group' in 'Feature_Extraction.m'.
+Also make appropriate changes in the variable 'group' in 'Feature_Extraction.m'
