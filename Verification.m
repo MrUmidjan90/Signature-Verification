@@ -59,15 +59,8 @@ Result=tabulate(group(n));
 %% Training Phase
 % features = [Mean,Var,Skewness,Kurtosis,Entropy,Energy];
 load group;
-wxtrain=[FeatK(:,1),FeatK(:,46),FeatK(:,91),FeatK(:,136),FeatK(:,181)];
-wSVMStruct = svmtrain(wxtrain,group,'kernel_function','polynomial','Polyorder',12,'showplot',true);
 
-%% Testing Phase
-wtest=[Katz(1,1),Katz(1,46),Katz(1,91),Katz(1,136),Katz(1,181)];
-%% SVM Classifier    
-wspecies_svm = svmclassify(wSVMStruct,wtest);
 %% Outputs
-disp('Signature Belongs According to SVM');
-disp(wspecies_svm);
+
 disp('Signature Belongs According to KKN');
 disp(Result(1));
